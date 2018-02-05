@@ -1,2 +1,3 @@
 #!/bin/bash
-exec /opt/app-root/build/server -host=:8080 
+cd /opt/app-root/build/src/
+exec /opt/app-root/build/src/server -host=:8080 
