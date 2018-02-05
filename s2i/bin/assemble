@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+
+echo "---> Installing application source ..."
+mkdir src
+cp -Rf /tmp/src/. ./src/
+
+echo "---> Build the website ..."
+cd src/src
+go build && mv src ../server
+
+echo "---> Copy the website ..."
+cd ..
+cp -Rf . /opt/app-root/build
