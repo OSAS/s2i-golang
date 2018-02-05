@@ -1,2 +1,2 @@
 #!/bin/bash
-exec /opt/app-root/build/server 
+exec /opt/app-root/build/server -host=:8080 
